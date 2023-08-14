@@ -40,7 +40,7 @@ public class Start {
             //TODO Desafio: Consultar Caderno(matéria)
             System.out.println("5 - Fazer pedido");
             System.out.println("6 - Excluir pedido");
-            //TODO Desafio: Consultar Pedido(código)
+            System.out.println("6c - Consultar pedido");
             System.out.println("7 - Listar produtos");
             System.out.println("8 - Listar pedidos");
             System.out.println("9 - Deslogar");
@@ -87,6 +87,12 @@ public class Start {
                     String codigoPedido = LeitoraDados.lerDado();
                     pedidoNegocio.excluir(codigoPedido);
                     break;
+
+                case "6c":
+                    System.out.println("Digite o codigo do pedido");
+                    String consultacodigo = LeitoraDados.lerDado();
+                    pedidoNegocio.consultar(consultacodigo);
+
                 case "7":
                     produtoNegocio.listarTodos();
                     break;

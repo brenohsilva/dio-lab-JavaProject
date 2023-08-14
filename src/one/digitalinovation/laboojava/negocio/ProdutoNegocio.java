@@ -1,6 +1,7 @@
 package one.digitalinovation.laboojava.negocio;
 
 import one.digitalinovation.laboojava.basedados.Banco;
+import one.digitalinovation.laboojava.entidade.Livro;
 import one.digitalinovation.laboojava.entidade.Produto;
 
 import java.util.Objects;
@@ -90,9 +91,8 @@ public class ProdutoNegocio {
         return Optional.empty();
     }
 
-    /**
-     * Lista todos os produtos cadastrados.
-     */
+
+
     public void listarTodos() {
 
         if (bancoDados.getProdutos().length == 0) {
